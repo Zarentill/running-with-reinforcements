@@ -1,0 +1,34 @@
+When editing a faction's .xml (and also _boss.xml if it is also listed in the scripts/my_stage_configurator.as) the default group must 
+retain the start of:
+  <soldier name="default"
+This requirement is either due to hard coding, unverified actionscript reference, or possibly a dependence with sqaud_config?
+
+
+When adding a modded vehicle the .vehicle entry mut be added to both lists:
+  all_vehicles
+  invasion_all_vehicles
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
