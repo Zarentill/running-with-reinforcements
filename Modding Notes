@@ -1,3 +1,13 @@
-To add a vehicle to a call the following files muct be edited:
-  calls\all_calls.xml
+To add a custom .vehicle to an in game call, the following must be done:
+  added to:
+    vehicles\   {.vehicle file must be added here}
+    calls\      {.call file must be added here}
   
+  edited:
+    calls\all_calls.xml     {.call reference must be added here}
+    factions\#####_default.resources (##### for the specific faction, or common.resources for all factions)   {both .call and .vehicle refernce must be added here}
+    vehicles\all_vehicles.xml     {.vehicle refernce must be added here}
+    vehicles\invasion_all_vehicles.xml     {.vehicle refernce must be added here}
+
+
+*****
