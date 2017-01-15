@@ -1,3 +1,6 @@
+####################
+#Vehicles
+####################
 To add a custom .vehicle to an in game call, the following must be done:
   added to:
     vehicles\   {.vehicle file must be added here}
@@ -9,5 +12,10 @@ To add a custom .vehicle to an in game call, the following must be done:
     vehicles\all_vehicles.xml     {.vehicle refernce must be added here}
     vehicles\invasion_all_vehicles.xml     {.vehicle refernce must be added here}
 
-
 *****
+
+When positioning drivers, passangers, or gunners (controled by turret value, turret offset="0 -2.0 0.0") the value of 
+position="0.0 0.0 0.0" relatesto the forward facing direction of the vehicle int he following way:
+  position="#.# 0.0 0.0" ; Where # is positive is to the horizontal left of the vehicle center line and negative is horizontal right
+  position="0.0 #.# 0.0" ; Where # is positive is to the verticle up from the vehicle center line and negative is vertical down
+  position="0.0 0.0 #.#" ; Where # is positive is to the horizontal forward of the vehicle center line and negative is horizontal rear
