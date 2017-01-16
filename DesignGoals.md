@@ -1,13 +1,13 @@
 This file will contain a list of the various features & design goals we intend to have in the mod.
 
-######################################
+
 #Design Doc - Primary changes to gameplay mechanics:
-######################################
 
 
-######################################
+
+
 #Design Doc - Secondary changes to gameplay mechanics:
-######################################
+
 
 
 ######################################
