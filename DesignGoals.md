@@ -8,7 +8,7 @@ This file will contain a list of the various features & design goals we intend t
 
 #Design Doc - Secondary changes to gameplay mechanics:
 
-
+Hoover Craft - Will need some sort of update call for vehicle entering the water from land. Otherwise, works as expected.
 
 
 #Design Doc - Player experience goals:
