@@ -1,4 +1,4 @@
-******************************************Deceleration of file type
+******************************************Primary File Attributes
 Vehicle			{prefixing of file type}
 
 file=
@@ -9,7 +9,15 @@ key=
 
 map_view_atlas_index=
 
+jams_enemy_radio=
+
 minimum_fill_requirement=
+
+designated_squad_as_driver_only=
+
+allow_character_leave_request=
+
+allow_owner_to_use_only
 
 allow_ai_to_use=
 
@@ -19,6 +27,8 @@ existence=
 			"one_per_faction"
 
 reserves_spawn_point=
+
+spottable=
 
 protectors=
 
@@ -38,6 +48,10 @@ tag name=
 			"deco_car" 
 			"metal_thin"
 			"sandbag"
+			"deco_car"
+			"metal_dumpster"
+			"metal"
+			"tank" 
 
 ******************************************Tire to Vehicle Relative
 
@@ -62,7 +76,15 @@ max_rotation=
 
 max_water_depth=
 
+can_steer_in_water=
+
+can_steer_on_ground=
+
 steer_smoothening=
+
+tracked=
+
+gears=
 
 ******************************************Vehicle Physical Statistics
 
@@ -96,25 +118,42 @@ weapon_offset=
 
 weapon_recoil=
 
+physics_recoil=
+
 max_rotation_step=
+
+rotation=
 
 rotation_range=
 
-******************************************Visual and Physical Appearance
+aim_shoot_threshold=
+
+******************************************Physical Appearance
 
 visual class=
 				"chassis"
 				"tire"
 				"turret"
+				"track"
 
 key=
 		"broken"
+		
+turret_index=
 
 mesh_filename=
 				"**********.mesh"
 
 texture_filename=
 					"**********.png"
+
+******************************************Physical Textures
+
+part texture_filename
+
+texture_animation=
+
+tire_binding
 
 ******************************************Character in Vehicle
 
@@ -125,6 +164,8 @@ character_slot type=
 								exit_rotation=
 								hiding=
 								animation_id=
+								animation_key=
+												"driving car, headbang"
 						"gunner"
 								attached_on_turret=
 								seat_position=
@@ -133,7 +174,14 @@ character_slot type=
 								exit_rotation=
 								hiding=
 								animation_id=
-								<turret index="0" />
+								animation_key=
+												""tank mg still""
+												
+								  	<state class="entering" animation_key="crouching forwards short, no weapon" position="0.2 0 -0.7" rotation="0" />
+									<state class="leaving" animation_key="crouching forwards short, no weapon" position="0.2 0 -0.7" rotation="3.14" />
+									<state class="idle" animation_key="crouch still, no weapon, 62" position="0.0 2.0 -0.0" />
+									<turret index="0" />
+									<turret index="1" />
 						"passenger"
 									 position=
 									 rotation=
@@ -141,6 +189,13 @@ character_slot type=
 									hiding=
 									animation_id=
 									allow_weapon=
+									animation_key=
+													"travelling car, aiming, left"
+													"driving car, headbang"
+
+******************************************Spawning?
+
+spawn_point player_only=
 
 ******************************************Sound Handling
 
@@ -180,6 +235,9 @@ effect event_key=
 					"destroyed"
 					"destroy"
 					"cleanup"
+					"idle_chassis"
+					"drive_chassis"
+					"drive"
 
 type=
 		"splat_map"
@@ -194,6 +252,13 @@ ref=
 		"SmokeMinor"
 		"ShadowSmokeMinor"
 		"MediumSmokeFuel"
+		"FlareSparkle"
+		"FlareSmoke"
+		"FlareFlash"
+		"woosh_big"
+		"Propulsion"
+		"BurstRepeat"
+		"PrisonSmoke"
 
 surface_tag=
 				"road"
@@ -230,11 +295,14 @@ trigger class=
 				"destroy"
 				"spot"
 				"cleanup"
+				"create"
 
 call key=
 			{any existing call that is a .call file}		(enable="")
 				
 result class=
+				"map_disable"
+				"map_enable"
 				"faction_resources"		(affect_enemies="")
 				"reward"		(xp="" ; rp="")
 				"spawn"
