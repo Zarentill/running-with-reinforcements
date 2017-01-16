@@ -10,14 +10,13 @@ This file will contain a list of the various features & design goals we intend t
 
 
 
-######################################
+
 #Design Doc - Player experience goals:
-######################################
 
 
-######################################
+
+
 #Moddified Content:
-######################################
     calls:
     custom-Matches:
     factions:
@@ -38,9 +37,8 @@ This file will contain a list of the various features & design goals we intend t
     Pakage top level files:
 
 
-######################################    
+
 #Newly Created Content:
-######################################
     calls:
     custom-Matches:
     factions:
