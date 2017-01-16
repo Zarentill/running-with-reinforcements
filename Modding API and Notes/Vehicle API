@@ -1,1 +1,253 @@
-placeholder
+******************************************Deceleration of file type
+Vehicle			{prefixing of file type}
+
+file=
+
+name=
+
+key=
+
+map_view_atlas_index=
+
+minimum_fill_requirement=
+
+allow_ai_to_use=
+
+respawn_time=
+
+existence=
+			"one_per_faction"
+
+reserves_spawn_point=
+
+protectors=
+
+soldier_capacity_offset=
+
+should_be_destroyed=
+
+******************************************Quick Reference Name
+
+tag name=
+			"metal heavy"
+			"target"
+			"apc"
+			"thin_heavy"
+			"buggy"
+			"campfire"
+			"deco_car" 
+			"metal_thin"
+			"sandbag"
+
+******************************************Tire to Vehicle Relative
+
+tire_set offset=
+					offset=
+					radius=
+
+******************************************Modifier for Additional Functions
+
+modifier class=
+				"blast_range"		(value="")
+
+******************************************Vehicle Operational Statistics
+
+control max_speed=
+
+acceleration=
+
+max_reverse_speed=
+
+max_rotation=
+
+max_water_depth=
+
+steer_smoothening=
+
+******************************************Vehicle Physical Statistics
+
+physics max_health=
+
+mass=
+
+extent=
+
+offset=
+
+top_offset=
+
+collision_model_pos=
+
+collision_model_extent=
+
+visual_offset=
+
+preserve_motion_on_impact_factor=
+
+collision_response_factor=
+
+******************************************Turret Fire Control
+
+turret offset=
+
+weapon_key=
+
+weapon_offset=
+
+weapon_recoil=
+
+max_rotation_step=
+
+rotation_range=
+
+******************************************Visual and Physical Appearance
+
+visual class=
+				"chassis"
+				"tire"
+				"turret"
+
+key=
+		"broken"
+
+mesh_filename=
+				"**********.mesh"
+
+texture_filename=
+					"**********.png"
+
+******************************************Character in Vehicle
+
+character_slot type=
+						"driver"
+								position=
+								rotation=
+								exit_rotation=
+								hiding=
+								animation_id=
+						"gunner"
+								attached_on_turret=
+								seat_position=
+								enter_position=
+								rotation=
+								exit_rotation=
+								hiding=
+								animation_id=
+								<turret index="0" />
+						"passenger"
+									 position=
+									 rotation=
+									 exit_rotation=
+									hiding=
+									animation_id=
+									allow_weapon=
+
+******************************************Sound Handling
+
+rev_sound filename=
+					"**********.wav"
+
+low_pitch=
+
+high_pitch=
+
+low_rev=
+
+high_rev=
+
+volume=
+
+******************************************Vehicle Sounds
+
+sound key=
+			"slide"
+			"squeal"
+			"ignition"
+			"horn"
+			"turret_rotation"
+			"hit"
+			"destroy"
+			"cleanup"
+
+filename=
+			"**********.wav"
+
+******************************************Vehicle Effect Events
+
+effect event_key=
+					"slide"
+					"slide_hard"
+					"destroyed"
+					"destroy"
+					"cleanup"
+
+type=
+		"splat_map"
+		"particle"
+		
+ref=
+		"woosh"
+		"Burst"
+		"SmallSmokeVehicle"
+		"MediumSmokeVehicle"
+		"SmallFireRepeat"
+		"SmokeMinor"
+		"ShadowSmokeMinor"
+		"MediumSmokeFuel"
+
+surface_tag=
+				"road"
+				"dirt"
+
+key=
+				"terrain"
+				"other"
+
+use_surface_color=
+
+offset=
+
+post_processing=
+
+shadow=
+
+size=
+
+atlas_index=
+
+layer=
+
+******************************************Vehicle Events
+
+event key=
+			"receive_damage_xp_reward"
+			"destroy_xp_reward"
+			"spot_rp_reward"
+
+trigger class=
+				"spawn"
+				"receive_damage"
+				"destroy"
+				"spot"
+				"cleanup"
+
+call key=
+			{any existing call that is a .call file}		(enable="")
+				
+result class=
+				"faction_resources"		(affect_enemies="")
+				"reward"		(xp="" ; rp="")
+				"spawn"
+!!!!Spawn has a lot!!!!
+						instance_class=
+										"visual_item"
+										"projectile"
+						instance_key=
+										"**********.visual_item"
+										"debri_stun"
+						min_amount=
+						max_amount=
+						offset=
+						position_spread=
+						direction_spread=
+!!!!!!!!!!!!!!!!!!!!!!!
