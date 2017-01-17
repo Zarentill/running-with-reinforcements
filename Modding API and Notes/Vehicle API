@@ -17,7 +17,7 @@ designated_squad_as_driver_only=
 
 allow_character_leave_request=
 
-allow_owner_to_use_only
+allow_owner_to_use_only=
 
 allow_ai_to_use=
 
