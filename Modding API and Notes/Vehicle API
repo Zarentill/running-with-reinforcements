@@ -1,5 +1,5 @@
 ******************************************Primary File Attributes
-Vehicle			{prefixing of file type}
+Vehicle		{prefixing of file type}
 
 file=
 
@@ -24,7 +24,7 @@ allow_ai_to_use=
 respawn_time=
 
 existence=
-			"one_per_faction"
+	"one_per_faction"
 
 reserves_spawn_point=
 
