@@ -1,0 +1,169 @@
+×£¼{.>L*~ €&S  nS  (S P#S 0(S 0(S @(S 8*~ ð/S &S °&S È)~  -S  \S  %S pÂS  ŒS S `*~ ÈS ÐÈS 0ÉS `ÈS ERROR, unknown input request id,    ¬*~ `‰k  Šf PbP PbP PbP PbP PbP ðFl €›R €›R ðFl ðFl €›R €›R ø*~ `‰k PbP PbP PbP  Šf PbP PbP ðFl €›R €›R ðFl ðFl €›R €›R D+~ `‰k PbP PbP PbP PbP PbP  Šf ðFl €›R €›R ðFl ðFl €›R €›R +~ `‰k PbP PbP  Šf PbP PbP PbP ðFl €›R €›R ðFl ðFl €›R €›R bind      
+
+
+
+vehicle index:      
+adding blast range modifier,  
+blast_range modifier    
+idle_chassis event_key found    
+idle_chassis    
+drive_chassis event_key found   
+drive_chassis   
+cleanup event_key found 
+destroyed event_key found   
+destroyed   
+drive event_key found   
+drive   
+slide_hard event_key found  
+slide_hard  
+slide event_key found     
+adding the event    
+replacing earlier event 
+found with key       
+trigger: create     
+trigger: cleanup    
+trigger: spot    
+spot       
+trigger: receive_damage  
+receive_damage  
+create    
+handling event    
+class_id    
+item_container  
+player_only spawn_point cleanup 
+adding turret rotation sound     at     
+WARNING, trying to assign sound turret_rotation,     to invalid index   
+turret_rotation 
+horn    
+ignition    
+min_friction    
+squeal  
+slide   
+high_rev    
+low_rev high_pitch  
+low_pitch   
+rev_sound   
+rear_tire   
+tire    
+front_tire  
+tire_binding    
+texture_animation   
+texture_filename    
+part    
+mesh_filename   
+track   
+max_tilt    
+chassis visual  
+no turret association defined, binding turret 0 with slot   turret   to be associated with slot     
+attached_on_turret  
+idle    
+leaving entering    
+animation_key   
+animation_id    
+exit_rotation   
+seat_position   
+enter_position  
+should_fight_vehicles_only  
+allow_weapon    
+hiding  
+passenger   
+driver  
+gunner  
+character_slot    
+rotation_range =    
+mid_rotation =      
+max_rotation_step =     
+physics_recoil =    
+weapon_recoil =   
+aim_shoot_threshold rotation    
+rotation_range  
+max_rotation_step   
+weapon_key  
+weapon_index    
+physics_recoil  
+weapon_recoil   
+weapon_offset   
+turret    
+weapon_index =      
+weapon_offset =     
+turret_offset =     
+turret_index =     
+weapon turret_offset   
+turret_index      
+gravity_in_water =      
+gravity =       
+collision_response_factor =     
+collision_softness =    
+preserve_motion_on_impact_factor =      
+collision aabb =    
+visual offset =     
+offset =    
+extent =    
+mass =      
+max_health =  
+gravity_in_water    
+gravity collision_response_factor   
+collision_softness  
+preserve_motion_on_impact_factor    
+collision_model_extent  
+collision_model_pos top_offset  
+visual_offset   
+mass    
+max_health  
+physics   
+can_steer_on_ground =       
+can_steer_in_water =    
+gears =     
+max_water_depth =       
+max_rotation =      
+max_reverse_speed =     
+acceleration =      
+max_speed =   
+gears   
+can_steer_on_ground 
+can_steer_in_water  
+tracked steer_smoothening   
+max_water_depth max_rotation    
+max_reverse_speed   
+acceleration      
+tire  , 
+position =    
+tire_set    
+max_character_collision_speed     
+allow_owner_to_use_only =     
+allow_owner_to_use_only   
+jams_enemy_radio =    
+jams_enemy_radio      
+allow_ai_to_use =     
+allow_ai_to_use   
+should_be_destroyed =     
+should_be_destroyed   
+soldier_capacity_offset =     
+soldier_capacity_offset 
+allow_character_leave_request     
+protectors =  
+designated_squad_as_driver_only 
+protectors  needs_protection    
+reserves_spawn_point    
+one_per_spawn_point 
+one_per_faction 
+existence   
+respawn_time      
+time to live:     
+time_to_live    
+spottable   
+map_view_atlas_index    
+minimum_fill_requirement    
+hint_text   
+vehicle,    
+loading vehicle 
+loading vehicle in  
+
+
+
+
+
+
+
+
+CHECK: vehicles or vehicle element not found in       4B ÀÑ8  `Â  ŒÂ  àÀÃõH@1.4   À@   AÍÌL>
