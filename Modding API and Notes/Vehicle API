@@ -156,7 +156,8 @@ max_tilt=
 
 ******************************************Physical Textures
 
-part texture_filename=
+part 
+texture_filename=
 
 texture_animation=
 
@@ -164,51 +165,52 @@ tire_binding
 
 ******************************************Character in Vehicle
 
-character_slot type=
-						"driver"
-								position=
-								rotation=
-								exit_rotation=
-								hiding=
-								animation_id=
-								animation_key=
-												"driving car, headbang"
-						"gunner"
-								attached_on_turret=
-								seat_position=
-								enter_position=
-								rotation=
-								exit_rotation=
-								hiding=
-								animation_id=
-								animation_key=
-												""tank mg still""
-												
-								  	<state class="entering" animation_key="crouching forwards short, no weapon" position="0.2 0 -0.7" rotation="0" />
-									<state class="leaving" animation_key="crouching forwards short, no weapon" position="0.2 0 -0.7" rotation="3.14" />
-									<state class="idle" animation_key="crouch still, no weapon, 62" position="0.0 2.0 -0.0" />
-									<turret index="0" />
-									<turret index="1" />
-						"passenger"
-									 position=
-									 rotation=
-									 exit_rotation=
-									hiding=
-									animation_id=
-									allow_weapon=
-									animation_key=
-													"travelling car, aiming, left"
-													"driving car, headbang"
+character_slot 
+		type=
+			"driver"
+				position=
+				rotation=
+				exit_rotation=
+				hiding=
+				animation_id=
+				animation_key=
+						"driving car, headbang"
+			"gunner"
+				attached_on_turret=
+				seat_position=
+				enter_position=
+				rotation=
+				exit_rotation=
+				hiding=
+				animation_id=
+				animation_key=
+						"tank mg still"									
+					<state class="entering" animation_key="crouching forwards short, no weapon" position="0.2 0 -0.7" rotation="0" />
+					<state class="leaving" animation_key="crouching forwards short, no weapon" position="0.2 0 -0.7" rotation="3.14" />
+					<state class="idle" animation_key="crouch still, no weapon, 62" position="0.0 2.0 -0.0" />
+					<turret index="0" />
+					<turret index="1" />
+			"passenger"
+				position=
+				rotation=
+				exit_rotation=
+				hiding=
+				animation_id=
+				allow_weapon=
+				animation_key=
+						"travelling car, aiming, left"
+						"driving car, headbang"
 
 ******************************************Spawning?
 
-spawn_point player_only=
+spawn_point 
+	player_only=
 
 ******************************************Sound Handling
 
-rev_sound filename=
-					"**********.wav"
-
+rev_sound 
+	filename=
+		"**********.wav"
 low_pitch=
 
 high_pitch=
@@ -222,29 +224,30 @@ volume=
 ******************************************Vehicle Sounds
 
 sound key=
-			"slide"
-			"squeal"
-			"ignition"
-			"horn"
-			"turret_rotation"
-			"hit"
-			"destroy"
-			"cleanup"
+	"slide"
+	"squeal"
+	"ignition"
+	"horn"
+	"turret_rotation"
+	"hit"
+	"destroy"
+	"cleanup"
 
 filename=
-			"**********.wav"
+	"**********.wav"
 
 ******************************************Vehicle Effect Events
 
-effect event_key=
-					#"slide"
-					#"slide_hard"
-					#"destroyed"
-					"destroy"
-					#"cleanup"
-					#"idle_chassis"
-					#"drive_chassis"
-					#"drive"
+effect 
+	event_key=
+		"slide"
+		"slide_hard"
+		"destroyed"
+		"destroy"
+		"cleanup"
+		"idle_chassis"
+		"drive_chassis"
+		"drive"
 
 type=
 		"splat_map"
