@@ -19,3 +19,13 @@ position="0.0 0.0 0.0" relatesto the forward facing direction of the vehicle int
   position="#.# 0.0 0.0" ; Where # is positive is to the horizontal left of the vehicle center line and negative is horizontal right
   position="0.0 #.# 0.0" ; Where # is positive is to the verticle up from the vehicle center line and negative is vertical down
   position="0.0 0.0 #.#" ; Where # is positive is to the horizontal forward of the vehicle center line and negative is horizontal rear
+
+*****
+
+When adding gravity to physics section of .vehicle, for whatever reason, negative and a value is down towards the ground. Also, it is very finiky.
+
+*****
+
+When changing the file name of a .vehicle a new campaing (maybe jsut map) must be started for that to be loaded into the current map.
+
+*****
