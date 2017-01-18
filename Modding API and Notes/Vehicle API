@@ -230,14 +230,14 @@ filename=
 ******************************************Vehicle Effect Events
 
 effect event_key=
-					"slide"
-					"slide_hard"
-					"destroyed"
+					#"slide"
+					#"slide_hard"
+					#"destroyed"
 					"destroy"
-					"cleanup"
-					"idle_chassis"
-					"drive_chassis"
-					"drive"
+					#"cleanup"
+					#"idle_chassis"
+					#"drive_chassis"
+					#"drive"
 
 type=
 		"splat_map"
