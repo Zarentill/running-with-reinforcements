@@ -1,6 +1,5 @@
 ******************************************Primary File Attributes
 Vehicle		{prefixing of file type}
-
 file=
 
 name=
@@ -55,18 +54,20 @@ tag name=
 
 ******************************************Tire to Vehicle Relative
 
-tire_set offset=
-					offset=
-					radius=
+tire_set
+	offset=
+	radius=
 
 ******************************************Modifier for Additional Functions
 
-modifier class=
-				"blast_range"		(value="")
+modifier 
+class=
+	"blast_range"		(value="")
 
 ******************************************Vehicle Operational Statistics
 
-control max_speed=
+control 
+max_speed=
 
 acceleration=
 
@@ -88,7 +89,8 @@ gears=
 
 ******************************************Vehicle Physical Statistics
 
-physics max_health=
+physics 
+max_health=
 
 mass=
 
@@ -110,7 +112,8 @@ collision_response_factor=
 
 ******************************************Turret Fire Control
 
-turret offset=
+turret 
+offset=
 
 weapon_key=
 
@@ -130,11 +133,14 @@ aim_shoot_threshold=
 
 ******************************************Physical Appearance
 
-visual class=
-				"chassis"
-				"tire"
-				"turret"
-				"track"
+visual 
+class=
+	"chassis"
+	"tire"
+	"turret"
+	"track"
+	"front_tire"
+	"rear_tire"
 
 key=
 		"broken"
@@ -146,10 +152,11 @@ mesh_filename=
 
 texture_filename=
 					"**********.png"
+max_tilt=
 
 ******************************************Physical Textures
 
-part texture_filename
+part texture_filename=
 
 texture_animation=
 
