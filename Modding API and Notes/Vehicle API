@@ -1,56 +1,58 @@
 ******************************************Primary File Attributes
-Vehicle		{prefixing of file type}
-file=
+Vehicle:
+	file=
 
-name=
+	name=
 
-key=
+	key=
 
-map_view_atlas_index=
+	map_view_atlas_index=
 
-jams_enemy_radio=
+	jams_enemy_radio=
 
-minimum_fill_requirement=
+	minimum_fill_requirement=
 
-designated_squad_as_driver_only=
+	designated_squad_as_driver_only=
 
-allow_character_leave_request=
+	allow_character_leave_request=
 
-allow_owner_to_use_only=
+	allow_owner_to_use_only=
 
-allow_ai_to_use=
+	allow_ai_to_use=
 
-respawn_time=
+	respawn_time=
 
-existence=
-	"one_per_faction"
+	existence=
+		"one_per_faction"
+		"one_per_spawn_point"
 
-reserves_spawn_point=
+	reserves_spawn_point=
 
-spottable=
+	spottable=
 
-protectors=
+	protectors=
 
-soldier_capacity_offset=
+	soldier_capacity_offset=
 
-should_be_destroyed=
+	should_be_destroyed=
 
 ******************************************Quick Reference Name
 
-tag name=
-			"metal heavy"
-			"target"
-			"apc"
-			"thin_heavy"
-			"buggy"
-			"campfire"
-			"deco_car" 
-			"metal_thin"
-			"sandbag"
-			"deco_car"
-			"metal_dumpster"
-			"metal"
-			"tank" 
+tag:
+	name=
+		"metal heavy"
+		"target"
+		"apc"
+		"thin_heavy"
+		"buggy"
+		"campfire"
+		"deco_car" 
+		"metal_thin"
+		"sandbag"
+		"deco_car"
+		"metal_dumpster"
+		"metal"
+		"tank" 
 
 ******************************************Tire to Vehicle Relative
 
@@ -60,112 +62,112 @@ tire_set
 
 ******************************************Modifier for Additional Functions
 
-modifier 
-class=
-	"blast_range"		(value="")
+modifier:
+	class=
+		"blast_range"		(value="")
 
 ******************************************Vehicle Operational Statistics
 
-control 
-max_speed=
+control:
+	max_speed=
 
-acceleration=
+	acceleration=
 
-max_reverse_speed=
+	max_reverse_speed=
 
-max_rotation=
+	max_rotation=
 
-max_water_depth=
+	max_water_depth=
 
-can_steer_in_water=
+	can_steer_in_water=
 
-can_steer_on_ground=
+	can_steer_on_ground=
 
-steer_smoothening=
+	steer_smoothening=
 
-tracked=
+	tracked=
 
-gears=
+	gears=
 
 ******************************************Vehicle Physical Statistics
 
-physics 
-max_health=
+physics:
+	max_health=
 
-mass=
+	mass=
 
-extent=
+	extent=
 
-offset=
+	offset=
 
-top_offset=
+	top_offset=
 
-collision_model_pos=
+	collision_model_pos=
 
-collision_model_extent=
+	collision_model_extent=
 
-visual_offset=
+	visual_offset=
 
-preserve_motion_on_impact_factor=
+	preserve_motion_on_impact_factor=
 
-collision_response_factor=
+	collision_response_factor=
 
 ******************************************Turret Fire Control
 
-turret 
-offset=
+turret:
+	offset=
 
-weapon_key=
+	weapon_key=
 
-weapon_offset=
+	weapon_offset=
 
-weapon_recoil=
+	weapon_recoil=
 
-physics_recoil=
+	physics_recoil=
 
-max_rotation_step=
+	max_rotation_step=
 
-rotation=
+	rotation=
 
-rotation_range=
+	rotation_range=
 
-aim_shoot_threshold=
+	aim_shoot_threshold=
 
 ******************************************Physical Appearance
 
-visual 
-class=
-	"chassis"
-	"tire"
-	"turret"
-	"track"
-	"front_tire"
-	"rear_tire"
+visual:
+	class=
+		"chassis"
+		"tire"
+		"turret"
+		"track"
+		"front_tire"
+		"rear_tire"
 
-key=
+	key=
 		"broken"
 		
-turret_index=
+	turret_index=
 
-mesh_filename=
-				"**********.mesh"
+	mesh_filename=
+			"**********.mesh"
 
-texture_filename=
-					"**********.png"
-max_tilt=
+	texture_filename=
+			"**********.png"
+	max_tilt=
 
 ******************************************Physical Textures
 
-part 
-texture_filename=
+part:
+	texture_filename=
 
-texture_animation=
+	texture_animation=
 
-tire_binding
+	tire_binding
 
 ******************************************Character in Vehicle
 
-character_slot 
+character_slot:
 		type=
 			"driver"
 				position=
@@ -203,42 +205,43 @@ character_slot
 
 ******************************************Spawning?
 
-spawn_point 
+spawn_point: 
 	player_only=
 
 ******************************************Sound Handling
 
-rev_sound 
+rev_sound:
 	filename=
 		"**********.wav"
-low_pitch=
+	low_pitch=
 
-high_pitch=
+	high_pitch=
 
-low_rev=
+	low_rev=
 
-high_rev=
+	high_rev=
 
-volume=
+	volume=
 
 ******************************************Vehicle Sounds
 
-sound key=
-	"slide"
-	"squeal"
-	"ignition"
-	"horn"
-	"turret_rotation"
-	"hit"
-	"destroy"
-	"cleanup"
+sound:
+	key=
+		"slide"
+		"squeal"
+		"ignition"
+		"horn"
+		"turret_rotation"
+		"hit"
+		"destroy"
+		"cleanup"
 
-filename=
-	"**********.wav"
+	filename=
+		"**********.wav"
 
 ******************************************Vehicle Effect Events
 
-effect 
+effect:
 	event_key=
 		"slide"
 		"slide_hard"
@@ -249,11 +252,11 @@ effect
 		"drive_chassis"
 		"drive"
 
-type=
+	type=
 		"splat_map"
 		"particle"
 		
-ref=
+	ref=
 		"woosh"
 		"Burst"
 		"SmallSmokeVehicle"
@@ -270,62 +273,66 @@ ref=
 		"BurstRepeat"
 		"PrisonSmoke"
 
-surface_tag=
-				"road"
-				"dirt"
+	surface_tag=
+		"road"
+		"dirt"
 
-key=
-				"terrain"
-				"other"
+	key=
+		"terrain"
+		"other"
 
-use_surface_color=
+	use_surface_color=
 
-offset=
+	offset=
 
-post_processing=
+	post_processing=
 
-shadow=
+	shadow=
 
-size=
+	size=
 
-atlas_index=
+	atlas_index=
 
-layer=
+	layer=
 
 ******************************************Vehicle Events
 
-event key=
-			"receive_damage_xp_reward"
-			"destroy_xp_reward"
-			"spot_rp_reward"
+event:
+	key=
+		"receive_damage_xp_reward"
+		"destroy_xp_reward"
+		"spot_rp_reward"
 
-trigger class=
-				"spawn"
-				"receive_damage"
-				"destroy"
-				"spot"
-				"cleanup"
-				"create"
+	trigger:
+		class=
+			"spawn"
+			"receive_damage"
+			"destroy"
+			"spot"
+			"cleanup"
+			"create"
 
-call key=
+	call:
+		key=
 			{any existing call that is a .call file}		(enable="")
 				
-result class=
-				"map_disable"
-				"map_enable"
-				"faction_resources"		(affect_enemies="")
-				"reward"		(xp="" ; rp="")
-				"spawn"
-!!!!Spawn has a lot!!!!
-						instance_class=
-										"visual_item"
-										"projectile"
-						instance_key=
-										"**********.visual_item"
-										"debri_stun"
-						min_amount=
-						max_amount=
-						offset=
-						position_spread=
-						direction_spread=
-!!!!!!!!!!!!!!!!!!!!!!!
+	result:
+		class=
+			"map_disable"
+			"map_enable"
+			"faction_resources"		(affect_enemies="")
+			"reward"		(xp="" ; rp="")
+			"spawn"
+			!!!!Spawn has a lot!!!!
+				instance_class=
+						"visual_item"
+						"projectile"
+				instance_key=
+						"**********.visual_item"
+						"debri_stun"
+				min_amount=
+				max_amount=
+				offset=
+				position_spread=
+				direction_spread=
+			!!!!!!!!!!!!!!!!!!!!!!!
