@@ -11,6 +11,8 @@ Vehicle:
 	jams_enemy_radio=
 
 	minimum_fill_requirement=
+	
+	needs_protection=
 
 	designated_squad_as_driver_only=
 
@@ -35,6 +37,8 @@ Vehicle:
 	soldier_capacity_offset=
 
 	should_be_destroyed=
+	
+	time_to_live=
 
 ******************************************Quick Reference Name
 
@@ -111,6 +115,14 @@ physics:
 	preserve_motion_on_impact_factor=
 
 	collision_response_factor=
+	
+	##gravity=
+	
+	##gravity_in_water=
+	
+	##collision_softness=
+	
+	##aabb=
 
 ******************************************Turret Fire Control
 
@@ -118,18 +130,24 @@ turret:
 	offset=
 
 	weapon_key=
-
+	
+	##weapon_index=
+	
 	weapon_offset=
 
 	weapon_recoil=
 
 	physics_recoil=
+	
+	aim_shoot_threshold=
 
 	max_rotation_step=
 
 	rotation=
 
 	rotation_range=
+	
+	mid_rotation= 
 
 	aim_shoot_threshold=
 
@@ -154,7 +172,7 @@ visual:
 
 	texture_filename=
 			"**********.png"
-	max_tilt=
+	##max_tilt=
 
 ******************************************Physical Textures
 
@@ -163,7 +181,7 @@ part:
 
 	texture_animation=
 
-	tire_binding
+	tire_binding=
 
 ******************************************Character in Vehicle
 
@@ -184,12 +202,14 @@ character_slot:
 				rotation=
 				exit_rotation=
 				hiding=
+				should_fight_vehicles_only=
 				animation_id=
 				animation_key=
 						"tank mg still"									
 					<state class="entering" animation_key="crouching forwards short, no weapon" position="0.2 0 -0.7" rotation="0" />
 					<state class="leaving" animation_key="crouching forwards short, no weapon" position="0.2 0 -0.7" rotation="3.14" />
 					<state class="idle" animation_key="crouch still, no weapon, 62" position="0.0 2.0 -0.0" />
+					##<state class="attached_on_turret" />
 					<turret index="0" />
 					<turret index="1" />
 			"passenger"
@@ -229,6 +249,7 @@ sound:
 	key=
 		"slide"
 		"squeal"
+		##"min_friction"
 		"ignition"
 		"horn"
 		"turret_rotation"
