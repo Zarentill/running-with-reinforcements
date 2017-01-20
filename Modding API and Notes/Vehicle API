@@ -1,44 +1,44 @@
 ******************************************Primary File Attributes************************************************************************************************************************************************
 Vehicle:
-	file=
+	file="string"
 
-	name=
+	name="string"
 
-	key=
+	key="string"
 
-	map_view_atlas_index=
+	map_view_atlas_index="string"
 
-	jams_enemy_radio=
+	jams_enemy_radio="boel"
 
-	minimum_fill_requirement=
+	minimum_fill_requirement="int"
 	
-	needs_protection=
+	needs_protection="boel"
 
-	designated_squad_as_driver_only=
+	designated_squad_as_driver_only="boel"
 
-	allow_character_leave_request=
+	allow_character_leave_request="boel"
 
-	allow_owner_to_use_only=
+	allow_owner_to_use_only="boel"
 
-	allow_ai_to_use=
+	allow_ai_to_use="boel"
 
-	respawn_time=
+	respawn_time="int"
 
 	existence=
 		"one_per_faction"
 		"one_per_spawn_point"
 
-	reserves_spawn_point=
+	reserves_spawn_point=???
 
-	spottable=
+	spottable="boel"
 
-	protectors=
+	protectors="int"
 
-	soldier_capacity_offset=
+	soldier_capacity_offset="int"
 
-	should_be_destroyed=
+	should_be_destroyed="boel"
 	
-	time_to_live=
+	time_to_live=???
 
 ******************************************Quick Reference Name
 
@@ -61,8 +61,8 @@ tag:
 ******************************************Tire to Vehicle Relative
 
 tire_set
-	offset=
-	radius=
+	offset="cords"
+	radius="int"
 
 ******************************************Modifier for Additional Functions
 
@@ -73,56 +73,56 @@ modifier:
 ******************************************Vehicle Operational Statistics
 
 control:
-	max_speed=
+	max_speed="int"
 
-	acceleration=
+	acceleration="int"
 
-	max_reverse_speed=
+	max_reverse_speed="int"
 
-	max_rotation=
+	max_rotation="int"
 
-	max_water_depth=
+	max_water_depth="int"
 
-	can_steer_in_water=
+	can_steer_in_water="boel"
 
-	can_steer_on_ground=
+	can_steer_on_ground="boel"
 
-	steer_smoothening=
+	steer_smoothening="int"
 
-	tracked=
+	tracked="boel"
 
-	gears=
+	gears=??
 
 ******************************************Vehicle Physical Statistics
 
 physics:
-	max_health=
+	max_health="int"
 
-	mass=
+	mass="int"
 
-	extent=				{expands the baseline of the model affected by gravity, and the pull from the tire joints, along the X and Z axis}
+	extent="cords"			{expands the baseline of the model affected by gravity, and the pull from the tire joints, along the X and Z axis}
 
-	offset=				{moves the base line of the model affected by gravity, and the pull from the tire joints, in relation to the XYZ position}
+	offset="cords"			{moves the base line of the model affected by gravity, and the pull from the tire joints, in relation to the XYZ position}
 
-	top_offset=			{moves the position of the pyramid point that extends up from the primary offest. Functions as a center of gravity}
+	top_offset="cords"		{moves the position of the pyramid point that extends up from the primary offest. Functions as a center of gravity}
 
-	collision_model_pos=		{moves the collision detection box of the model in relation to the XYZ axis}
+	collision_model_pos="cords"	{moves the collision detection box of the model in relation to the XYZ axis}
 
-	collision_model_extent=		{expands or contracts the collision detection box of the model along the XYZ axis}
+	collision_model_extent="cords"	{expands or contracts the collision detection box of the model along the XYZ axis}
 
-	visual_offset=			{moves the rendered model of the object in relation to the XYZ axis}
+	visual_offset="cords"		{moves the rendered model of the object in relation to the XYZ axis}
 
 	preserve_motion_on_impact_factor=
 
 	collision_response_factor=
 	
-	gravity=			{forwatever reason, negative on the Y axis seems to be down gravity and postive is up}
+	gravity="int"			{forwatever reason, negative on the Y axis seems to be down gravity and postive is up}
 	
-	gravity_in_water=		{forwatever reason, negative on the Y axis seems to be down gravity and postive is up}
+	gravity_in_water="int"		{forwatever reason, negative on the Y axis seems to be down gravity and postive is up}
 	
-	##collision_softness=
+	##collision_softness=???
 	
-	##aabb=
+	##aabb=???
 
 ******************************************Turret Fire Control
 
@@ -165,14 +165,14 @@ visual:
 	key=
 		"broken"
 		
-	turret_index=
+	turret_index="int"
 
 	mesh_filename=
 			"**********.mesh"
 
 	texture_filename=
 			"**********.png"
-	##max_tilt=
+	##max_tilt="int"
 
 ******************************************Physical Textures
 
@@ -188,21 +188,21 @@ part:
 character_slot:
 		type=
 			"driver"
-				position=
-				rotation=
-				exit_rotation=
-				hiding=
+				position="cords"
+				rotation="int"
+				exit_rotation="int"
+				hiding="boel"
 				animation_id=
 				animation_key=
 						"driving car, headbang"
 			"gunner"
-				attached_on_turret=
-				seat_position=
-				enter_position=
-				rotation=
-				exit_rotation=
-				hiding=
-				should_fight_vehicles_only=
+				attached_on_turret="boel"
+				seat_position="cords"
+				enter_position="cords"
+				rotation="int"
+				exit_rotation="int"
+				hiding="boel"
+				should_fight_vehicles_only="boel"
 				animation_id=
 				animation_key=
 						"tank mg still"									
@@ -213,12 +213,12 @@ character_slot:
 					<turret index="0" />
 					<turret index="1" />
 			"passenger"
-				position=
-				rotation=
-				exit_rotation=
-				hiding=
+				position="cords"
+				rotation="int"
+				exit_rotation="int"
+				hiding="boel"
 				animation_id=
-				allow_weapon=
+				allow_weapon="boel"
 				animation_key=
 						"travelling car, aiming, left"
 						"driving car, headbang"
