@@ -12,26 +12,42 @@ Just so we can revert back if we change something silly & it drastically alters 
 
 
 5 man shotgun assault squad with EOD suits - 
+
 5 man medic team with LMG's - 
+
 10 man infantry squad with assault rifles - 
+
 2 man sniper team - 
+
 All bullets are 100% lethal - 
-Snipers are 300% lethal for armor piercing effect
+
+Snipers are 300% lethal for armor piercing effect - 
+
 Every unit is wearing some kind of armor - 
+
 Various different grenades & things equipped (determined by the type of squad they are) - 
-Players gain a constant trickle of RP to spend on calls
+
+Players gain a constant trickle of RP to spend on calls - 
+
 XP should probably be disabled for the most part - 
+
 All calls would just be enabled by default - 
+
 Tweak the player a little bit, to make him a bit weaker - 
+
 Single shot pistol, 100% lethal, but still takes 2-3 shots depending on enemy armor - 
+
 Remove pretty much everything from the armory that is purchasable - 
 
 
 #Design Doc - Secondary changes to gameplay mechanics:
 
 Hovercraft - prototype working
+
 Submarine - prototype working
+
 Motorcycle - nearly compelte fucntionality
+
 Helicopter - sort of working
 
 
