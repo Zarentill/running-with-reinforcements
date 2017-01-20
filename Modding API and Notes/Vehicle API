@@ -1,4 +1,4 @@
-******************************************Primary File Attributes
+******************************************Primary File Attributes************************************************************************************************************************************************
 Vehicle:
 	file=
 
@@ -100,17 +100,17 @@ physics:
 
 	mass=
 
-	extent=
+	extent=				{expands the baseline of the model affected by gravity, and the pull from the tire joints, along the X and Z axis}
 
-	offset=
+	offset=				{moves the base line of the model affected by gravity, and the pull from the tire joints, in relation to the XYZ position}
 
-	top_offset=
+	top_offset=			{moves the position of the pyramid point that extends up from the primary offest. Functions as a center of gravity}
 
-	collision_model_pos=
+	collision_model_pos=		{moves the collision detection box of the model in relation to the XYZ axis}
 
-	collision_model_extent=
+	collision_model_extent=		{expands or contracts the collision detection box of the model along the XYZ axis}
 
-	visual_offset=
+	visual_offset=			{moves the rendered model of the object in relation to the XYZ axis}
 
 	preserve_motion_on_impact_factor=
 
