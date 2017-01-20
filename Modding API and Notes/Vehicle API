@@ -116,9 +116,9 @@ physics:
 
 	collision_response_factor=
 	
-	##gravity=
+	gravity=			{forwatever reason, negative on the Y axis seems to be down gravity and postive is up}
 	
-	##gravity_in_water=
+	gravity_in_water=		{forwatever reason, negative on the Y axis seems to be down gravity and postive is up}
 	
 	##collision_softness=
 	
