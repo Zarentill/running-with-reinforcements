@@ -1,0 +1,17 @@
+handling event
+class_id    
+item_container  
+
+cleanup adding turret rotation sound     at     WARNING, trying to assign sound turret_rotation,     to invalid index   
+   
+no turret association defined, binding turret 0 with slot   turret   to be associated with slot     
+     
+tire  , position =    tire_set    max_character_collision_speed     
+
+hint_text 
+ 
+
+
+
+
+  tire  , position =    tire_set    max_character_collision_speed     

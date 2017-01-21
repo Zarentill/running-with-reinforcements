@@ -1,0 +1,31 @@
+####################
+#Vehicles
+####################
+To add a custom .vehicle to an in game call, the following must be done:
+  added to:
+    vehicles\   {.vehicle file must be added here}
+    calls\      {.call file must be added here}
+  
+  edited:
+    calls\all_calls.xml     {.call reference must be added here}
+    factions\#####_default.resources (##### for the specific faction, or common.resources for all factions)   {both .call and .vehicle refernce must be added here}
+    vehicles\all_vehicles.xml     {.vehicle refernce must be added here}
+    vehicles\invasion_all_vehicles.xml     {.vehicle refernce must be added here}
+
+*****
+
+When positioning drivers, passangers, or gunners (controled by turret value, turret offset="0 -2.0 0.0") the value of 
+position="0.0 0.0 0.0" relatesto the forward facing direction of the vehicle int he following way:
+  position="#.# 0.0 0.0" ; Where # is positive is to the horizontal left of the vehicle center line and negative is horizontal right
+  position="0.0 #.# 0.0" ; Where # is positive is to the verticle up from the vehicle center line and negative is vertical down
+  position="0.0 0.0 #.#" ; Where # is positive is to the horizontal forward of the vehicle center line and negative is horizontal rear
+
+*****
+
+When adding gravity to physics section of .vehicle, for whatever reason, negative and a value is down towards the ground. Also, it is very finiky.
+
+*****
+
+When changing the file name of a .vehicle a new campaing (maybe jsut map) must be started for that to be loaded into the current map.
+
+*****
