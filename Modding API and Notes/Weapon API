@@ -1,6 +1,9 @@
 
 weapon:
-    key="************.weapon">
+    file="************.weapon"
+    key="************.weapon"
+    name="sting"
+    transform_on_consume="string"
 
     specification:
             retrigger_time="0.5" 
@@ -16,6 +19,15 @@ weapon:
             projectile_speed="70.0" 
             slot="2" barrel_offset="0.5" 
             projectiles_per_shot="1"
+    
+    ballistics:
+            curve_height="2.5" 
+            near_far_distance="10.0" 
+            speed_estimation_near="69.0" 
+            speed_estimation_far="44.0" 
+            max_speed="46.0" 
+            randomness="0.0" 
+            tweak_factor="2.2"
     
     model:
             mesh_filename="************.mesh" 
@@ -62,6 +74,20 @@ weapon:
 
             accuracy="0.6"
 
+    modifier:
+            class=
+                    "projectile_hit_result"
+                    "projectile_blast_result"
+                    "melee_hit_result"
+            input_character_state=
+                                    "death"
+                                    "wound"
+                                    "stun"
+            output_character_state=
+                                    "none"
+                                    "stun"
+            consumes_item="0"
+    
     effect:
             class=
                     "muzzle" 
