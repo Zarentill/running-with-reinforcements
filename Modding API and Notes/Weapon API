@@ -38,20 +38,29 @@ weapon:
             source="rank" 
             source_value="0.0"
     
-    <weak_hand_hold offset="0.2" />
-    
-        <weak_hand_hold offset="0.2" />
+    weak_hand_hold: 
+            offset="0.2"
     
     projectile:
             file="bullet.projectile"
-        result:
+       ^result:
                 class="hit" 
                 kill_probability="0.5" 
                 kill_decay_start_time="0.30" 
                 kill_decay_end_time="0.40"
     
-    projectile:
-            file="************.projectile"
+    stance:
+            state_key=
+                    "running"
+                    "walking"
+                    "crouch_moving"
+                    "standing"
+                    "crouching"
+                    "prone"
+                    "prone_moving"
+                    "over_wall"
+
+            accuracy="0.6"
 
     effect:
             class=
@@ -84,3 +93,24 @@ weapon:
                     "reload_one"
 
             fileref="************.wav" />
+
+    animation:
+            state_key:
+                    "running"
+                    "walking"
+                    "walking_backwards"
+                    "crouching"
+                    "crouch_moving"
+                    ???"crouch_moving_backwards"
+                    "prone_still"
+                    "hold
+                    "hold_casual"
+                    "hold_on_wall"
+                    "hold_against_wall"
+                    "still"
+                    "still_against_wall"
+                    "changing_weapon_in" 
+                    "changing_weapon_out"
+                    "recoil"
+                    "stabbing"
+                    "celebrate_shoot"
