@@ -11,13 +11,13 @@ And when we do start tweaking AI, we need to save any version that we think is w
 Just so we can revert back if we change something silly & it drastically alters the AI for the worse lol.
 
 
-5 man shotgun assault squad with EOD suits - 
+5 man shotgun assault squad with EOD suits - (calls,factions = complete)
 
-5 man medic team with LMG's - 
+5 man medic team with LMG's - (calls,factions = complete)
 
-10 man infantry squad with assault rifles - 
+10 man infantry squad with assault rifles - (calls,factions = complete)
 
-2 man sniper team - 
+2 man sniper team - (calls,factions = complete)
 
 All bullets are 100% lethal - 
 
