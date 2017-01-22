@@ -1,0 +1,67 @@
+Carry Items
+	carry_item:
+			key="**********.carry_item"
+			name="string"
+			slot="1"
+			transform_on_consume="string"
+			time_to_live_out_in_the_open="120.0"
+
+	hud_icon:
+			filename="**********.png" />
+
+	capacity:
+			value="1"
+			source="rank"
+			source_value="0.1"
+
+	inventory:
+			encumbrance="3"
+			price="20"
+
+	model:
+			mesh_filename="**********.xml" />
+
+	commonness:
+			value="0.0"
+			in_stock="1"
+			can_respawn_with="0" />
+
+    modifier:
+            class=
+                    "projectile_hit_result"
+							^input_character_state=
+													"death"
+                                    				"wound"
+                                    				"stun"
+							^output_character_state=
+													"death"
+													"stun"
+													"none"
+                    "projectile_blast_result"
+							^input_character_state=
+													"death"
+                                    				"wound"
+                                    				"stun"
+							^output_character_state=
+													"death"
+													"stun"
+													"none"					
+                    "melee_hit_result"
+							^input_character_state=
+													"death"
+                                    				"wound"
+                                    				"stun"
+							^output_character_state=
+													"death"
+													"stun"
+													"none"					
+                    "speed"
+							^value="+0.02"
+					"hit_success_probability"
+							^value="-0.08"
+					"night_detectability"
+							^value="-0.25"
+					"detectability"
+							^value="-0.25"
+
+
