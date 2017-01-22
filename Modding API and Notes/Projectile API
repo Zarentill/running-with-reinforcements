@@ -26,6 +26,19 @@ Projectile
                        ^damage="0.45"
                        ^push="0.15"
                        ^decal="0"
+                       ^character_state=
+                                        "death"
+                                        "stun"
+                    "spawn"
+                        ^instance_class=
+                                        "vehicle"
+                        ^instance_key=
+                        ^min_amount=
+                        ^max_amount=
+                        ^offset=
+                        ^position_spread=
+                        ^direction_spread=
+                       
     
     collision:
             class=
@@ -44,6 +57,29 @@ Projectile
                     "motion"
                     "random"
 
+    throwable:
+            curve_height="3.0"
+            near_far_distance="5.0"
+            speed_estimation_near="9.0"
+            speed_estimation_far="17.0"
+            max_speed="9.0"
+            randomness="0.07"
+    
+    capacity:
+            value="0"
+            source="rank"
+            source_value="0.0"
+    
+    commonness:
+                value="0.0"
+    
+    model:
+                mesh_filename="flare_stick.mesh"
+                texture_filename="flare_stick.png"
+    
+    hud_icon:
+                filename="**********.png"
+    
     sound:
             class=
                 "result" 
