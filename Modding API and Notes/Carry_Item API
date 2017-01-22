@@ -39,7 +39,7 @@ Carry Items
 													"none"
                     "projectile_blast_result"
 							^input_character_state=
-													"death"
+							"death"
                                     				"wound"
                                     				"stun"
 							^output_character_state=
@@ -63,5 +63,6 @@ Carry Items
 							^value="-0.25"
 					"detectability"
 							^value="-0.25"
+					???backpack_weight_capacity=""
 
 
