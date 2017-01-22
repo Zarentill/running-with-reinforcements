@@ -48,6 +48,16 @@ Projectile
     trigger:
             class=
                     "impact"
+                        ^collider:
+                                class=
+                                        "terrain"
+                                                ^enabled="0"
+                                        "static_object"
+                                                ^enabled="0"
+                                        "vehicle"
+                                                ^enabled="0"
+                                        "character"
+                                                ^enabled="0"
                     "remote_detonate"
                     "time"
                        ^time_to_live="0.0"
@@ -64,6 +74,7 @@ Projectile
             speed_estimation_far="17.0"
             max_speed="9.0"
             randomness="0.07"
+            tweak_factor="1.1"
     
     capacity:
             value="0"
@@ -72,6 +83,13 @@ Projectile
     
     commonness:
                 value="0.0"
+                can_respawn_with="0"
+                in_stock="0"
+    
+    inventory:
+            encumbrance="3.0"
+            price="150.0"
+            in_stock="0"
     
     model:
                 mesh_filename="flare_stick.mesh"
@@ -83,19 +101,82 @@ Projectile
     sound:
             class=
                 "result" 
-            key=
-                "terrain"
-                       ^fileref="************.wav"
-                "shield"
-                       ^fileref="************.wav"
-                "vehicle"
-                       ^tag=".vehicle tag"
-                       ^file=""************.wav"
-                       ^pitch_variety="0.3"
-                       ^volume="0.5"
-                "static_object"
-                       ^copy=
-                            "terrain"
+                    key=
+                        "other"
+                               ^fileref="************.wav"                
+                        "character'
+                               ^fileref="************.wav"
+                        "terrain"
+                               ^fileref="************.wav"
+                        "shield"
+                               ^fileref="************.wav"
+                        "vehicle"
+                               ^tag="uses the .vehicle tag"
+                               ^file=""************.wav"
+                               ^pitch_variety="0.3"
+                               ^volume="0.5"
+                        "static_object"
+                               ^copy=
+                                    "terrain"
+    
+    effect:
+            class=
+                "activated"
+                    ^ref=
+                        "Propulsion"
+                        "Propulsion_gl"
+                "result"
+                    key=
+                         "terrain"
+                                ^ref=
+                                    "BigBurst"
+                                    "SmokeTop"
+                                    "Smoke"
+                                    "Shine"
+                                    "Godray"
+                                    "ShadowSmoke"
+                                    "FlashShine"
+                                    "FlashBeam"
+                                    "SmokeBurst"
+                                    "BurstShine"
+                                    "LowDust"
+                                ^use_surface_color="1"
+                                ^post_processing="1"
+                                ^lighting="1"
+                         "other"
+                                ^ref=
+                                    "SmokeTop"
+                                    "Smoke"
+                                    "Shine"
+                                    "Godray"
+                                    "ShadowSmoke"
+                                    "FlashShine"
+                                    "FlashBeam"
+                                ^post_processing="1"
+                                ^lighting="1"
+                                ^shadow="1"
+                         "static_object"
+                                ^ref=
+                                    "Burst"
+                                    "LowDust"
+                                ^copy="terrain"
+                         "vehicle"
+                               ^ref=
+                                    "Burst"
+                                    "LowDust"
+                               ^copy="terrain"
+                         "character"
+                               ^ref=
+                                    "Burst"
+                                    "LowDust"
+                               ^copy="terrain"
+            type="splat_map"
+                    ^surface_tag=""
+                    ^size="3.0"
+                    ^atlas_index="0"
+                    ^layer="1"
+                    ^additive="0"
+    
     trail:
             probability="1.0" 
             key="laser"
