@@ -4,6 +4,7 @@ weapon:
     key="************.weapon"
     name="sting"
     transform_on_consume="string"
+    on_ground_up="0 0 1"
 
     specification:
             stab_enabled="0"
@@ -95,7 +96,6 @@ weapon:
                     "prone"
                     "prone_moving"
                     "over_wall"
-
             accuracy="0.6"
 
     modifier:
@@ -103,6 +103,8 @@ weapon:
                     "projectile_hit_result"
                     "projectile_blast_result"
                     "melee_hit_result"
+                    "speed"
+                        ^value="0.00"
             input_character_state=
                                     "death"
                                     "wound"
@@ -142,9 +144,15 @@ weapon:
                     "cycle_in"
                     "reload_one"
 
-            fileref="************.wav" />
-
-    animation:
+            fileref="************.wav"
+            pitch_variety="0.05"
+            volume="0.7"
+    
+    animation:???
+            key=
+                "recoil"
+                "cycle"
+                "reload"
             state_key:
                     "running"
                     "walking"
@@ -164,3 +172,26 @@ weapon:
                     "recoil"
                     "stabbing"
                     "celebrate_shoot"
+                    
+             animation_key=
+                        "reloading"
+                        "aa-12"
+                        "recoil"
+                        "pistol"
+                        "hold_casual"
+                        "hold"
+                        "crouch"
+                        "running"
+                        "walking"
+                        "change eweapon in"
+                        "prone_still"
+                        "single hand carry"
+                        "prone_still"
+                        "walking backwards"
+                        "celebrating"
+                        "shooting"
+                        
+                        
+                        
+                        
+            
