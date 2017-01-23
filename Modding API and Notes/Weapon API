@@ -75,6 +75,8 @@ weapon:
             source="rank" 
             source_value="0.0"
     
+    projectiles_per_shot value="1"
+    
     weak_hand_hold: 
             offset="0.2"
     
@@ -190,6 +192,10 @@ weapon:
                         "walking backwards"
                         "celebrating"
                         "shooting"
+                        "aks74u"
+                        "vss_vintorez"
+                        
+                        
                         
                         
                         
