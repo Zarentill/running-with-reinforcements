@@ -5,6 +5,7 @@ weapon:
     name="sting"
     transform_on_consume="string"
     on_ground_up="0 0 1"
+    radius="0.0"
     drop_count_factor_on_death="1.0"
     time_to_live_out_in_the_open="90.0"
 
@@ -184,13 +185,18 @@ weapon:
                         "pistol"
                         "hold_casual"
                         "hold"
+                        "hip fire"
+                        "microgun"
+                        "carrying load"
+                        "deploy1"
+                        "still"
                         "crouch"
                         "crouching still"
                         "crouching forward"
                         "binoculars"
                         "running"
                         "walking"
-                        "change eweapon in"
+                        "change weapon in"
                         "prone_still"
                         "single hand carry"
                         "prone_still"
@@ -199,17 +205,36 @@ weapon:
                         "shooting"
                         "aks74u"
                         "vss_vintorez"
+                        "dragunov_svd"
+                        "f2000"
+                        "famasg1"
+                        "g36"
+                        "mp5sd"
+                        "imi-negev"
+                        "scorpion-evo"
+                        "l85a2"
+                        "cycle"
+                        "lahti_l39"
                         
                         
                         
-[[[From buggy_mg, bullseye]]]
+                        
+                        
+                        
+[[[From buggy_mg, bullseye, deployable_gl, deployable_mg, deployable_minig, humvee_gl, humvee_gl, ]]]
 <!-- front plate-mid -->    
     <shield    "0.3 -0.6 0" extent="0.2 1.0 0.35" />
-<!-- mid plate -->    
-    <shield    "-0.1 -0.3 0" extent="0.2 0.3 0.3" />
 <!-- front-L plate -->    
     <shield    "0.1 0 0.25" extent="0.2 0.3 0.3" /> 
 <!-- front-R plate -->    
-    <shield    "0.1 0 -0.25" extent="0.2 0.3 0.3" /> 
+    <shield    "0.1 0 -0.25" extent="0.2 0.3 0.3" />
+<!-- mid plate -->    
+    <shield    "-0.1 -0.3 0" extent="0.2 0.3 0.3" />
+<!-- left plate -->
+    <shield    "0.9 -0.5 +0.6" extent="1.5 0.3 0.2" />
+<!-- right plate -->  
+    <shield    "0.9 -0.5 -0.6" extent="1.5 0.3 0.2" />      
+<!-- rear plate --> 
+    <shield    "1.7 -0.2 0" extent="0.2 1.0 0.8" />   
                         
             
