@@ -8,19 +8,19 @@ Vehicle:
 
 	map_view_atlas_index="string"
 
-	jams_enemy_radio="boel"
+	jams_enemy_radio="bool"
 
 	minimum_fill_requirement="int"
 	
-	needs_protection="boel"
+	needs_protection="bool"
 
-	designated_squad_as_driver_only="boel"
+	designated_squad_as_driver_only="bool"
 
-	allow_character_leave_request="boel"
+	allow_character_leave_request="bool"
 
-	allow_owner_to_use_only="boel"
+	allow_owner_to_use_only="bool"
 
-	allow_ai_to_use="boel"
+	allow_ai_to_use="bool"
 
 	respawn_time="int"
 
@@ -30,13 +30,13 @@ Vehicle:
 
 	reserves_spawn_point=???
 
-	spottable="boel"
+	spottable="bool"
 
 	protectors="int"
 
 	soldier_capacity_offset="int"
 
-	should_be_destroyed="boel"
+	should_be_destroyed="bool"
 	
 	time_to_live=???
 
@@ -83,13 +83,13 @@ control:
 
 	max_water_depth="int"
 
-	can_steer_in_water="boel"
+	can_steer_in_water="bool"
 
-	can_steer_on_ground="boel"
+	can_steer_on_ground="bool"
 
 	steer_smoothening="int"
 
-	tracked="boel"
+	tracked="bool"
 
 	gears=??
 
@@ -191,18 +191,18 @@ character_slot:
 				position="cords"
 				rotation="int"
 				exit_rotation="int"
-				hiding="boel"
+				hiding="bool"
 				animation_id=
 				animation_key=
 						"driving car, headbang"
 			"gunner"
-				attached_on_turret="boel"
+				attached_on_turret="bool"
 				seat_position="cords"
 				enter_position="cords"
 				rotation="int"
 				exit_rotation="int"
-				hiding="boel"
-				should_fight_vehicles_only="boel"
+				hiding="bool"
+				should_fight_vehicles_only="bool"
 				animation_id=
 				animation_key=
 						"tank mg still"									
@@ -216,9 +216,9 @@ character_slot:
 				position="cords"
 				rotation="int"
 				exit_rotation="int"
-				hiding="boel"
+				hiding="bool"
 				animation_id=
-				allow_weapon="boel"
+				allow_weapon="bool"
 				animation_key=
 						"travelling car, aiming, left"
 						"driving car, headbang"
