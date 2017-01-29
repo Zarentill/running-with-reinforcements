@@ -55,7 +55,8 @@ tag:
 		"sandbag"
 		"metal_dumpster"
 		"metal"
-		"tank" 
+		"tank"
+		"supply"
 
 ******************************************Tire to Vehicle Relative
 
@@ -122,6 +123,10 @@ physics:
 	##collision_softness=???
 	
 	##aabb=???
+	
+	friction_offset="0.1"
+	
+	drag_offset="-0.05"
 
 ******************************************Turret Fire Control
 
@@ -192,6 +197,7 @@ character_slot:
 				animation_id=
 				animation_key=
 						"driving car, headbang"
+						"driving atv"
 			"gunner"
 				attached_on_turret="bool"
 				seat_position="cords"
@@ -219,6 +225,15 @@ character_slot:
 				animation_key=
 						"travelling car, aiming, left"
 						"driving car, headbang"
+
+******************************************Spawning?
+
+item_container:
+		class=
+			"armory"
+		offset="cords"
+		soldier_group=
+				"supply"
 
 ******************************************Spawning?
 
