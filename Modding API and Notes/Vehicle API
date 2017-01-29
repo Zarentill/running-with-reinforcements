@@ -53,7 +53,6 @@ tag:
 		"deco_car" 
 		"metal_thin"
 		"sandbag"
-		"deco_car"
 		"metal_dumpster"
 		"metal"
 		"tank" 
@@ -148,8 +147,6 @@ turret:
 	rotation_range=
 	
 	mid_rotation= 
-
-	aim_shoot_threshold=
 
 ******************************************Physical Appearance
 
